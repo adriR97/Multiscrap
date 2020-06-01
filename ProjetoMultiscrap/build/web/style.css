@@ -81,7 +81,6 @@ body{
     color: #6e6a6a;
     padding: 18px 16px;
     text-decoration: none;
-    background-image: url('imagens/iconSearch.png');
 }
 
 .dropdown {
@@ -209,7 +208,7 @@ body{
 }
 
 .menuAdmin a:hover{
-    background-color: #6e6a6a;
+    background-color: #000;
     color: white;
 }
 
@@ -246,6 +245,7 @@ body{
     text-align: center;
     border: none;
     margin-top: 10px;
+    margin-left: 1.6%;
 }
 
 .btnAddAlbum:hover{
@@ -253,7 +253,7 @@ body{
     color: #fff;    
 }
 
-#filtroLivro{
+#filtroAlbum{
     background-image: url('imagens/iconSearch.png');
     background-position: 480px 6px;
     background-repeat: no-repeat;
@@ -263,18 +263,96 @@ body{
     width: 500px;
     margin-top: 10px;
     font-size: 18px; 
+    margin-right: 2.6%;
 }
 
-table, td, th {  
-    border: 1px solid #ddd;
-    text-align: left;
-}
-            
-table {
-    border-collapse: collapse;
-    width: 100%;
+.tabelaItens{
+    margin-top: 20px !important;
+    width: 98%;
+    margin: 0px auto;
 }
 
-th, td {
-    padding: 15px;
+.colunaTabela{
+    width: 23.9%;
+    padding: 5px;
+    border: 0px solid black;
+    font-size: 12px;
+    text-align: center;
+    float: left
 }
+
+.imagemTabela{
+    width: 98%;
+    margin: 0px auto;
+    border: 0px solid #FA5882;
+    position: relative;
+}
+
+.botaoALbum{
+    width: 45%;
+    color: #6e6a6a;
+    font-size: 16px; 
+    background: black;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    padding: 5px 0px;
+}
+
+.botaoALbum:hover{
+    background-color: #FA5882;
+    color: #fff;    
+}
+
+/*--------------------- Efeito ao passar com o mouse por cima do álbum ---------------------*/
+
+.overlayTema {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  display:block;
+  right: 0;
+  background-color: #FA5882;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+  margin:0px auto;
+  text-transform: uppercase;
+}
+
+.overlayDetalhes {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #FA5882;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  margin:0px auto;
+  text-transform: uppercase;
+}
+.imagemTabela:hover .overlayTema {
+  bottom: 50%;
+  height: 15%;
+}
+.imagemTabela:hover .overlayDetalhes {
+  bottom: 33%;
+  height: 15%;
+}
+
+.text {
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+

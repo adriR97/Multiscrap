@@ -43,7 +43,7 @@
                 <b style="font-size: 18px">Selecione a foto de capa: </b>                
                 <input type="file" name="foto" accept="image/png, image/jpeg" 
                        title="Clique para adicionar uma imagem" style="font-size: 15px"><br><br>
-                <input type="submit" value="Cadastrar Álbum" class="btnAddAlbum">
+                <input type="submit" value="Cadastrar Álbum" class="btnAddAlbum" style="font-size: 16px;">
             </form> 
         </div>
     </body>
