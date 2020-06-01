@@ -55,4 +55,19 @@ public class ControlFotos {
             return 0;
         }
     } 
+    
+    public int alterarAlbum(String tema, InputStream foto, int id){
+        String sql = "UPDATE album SET tema=?, foto_capa=? WHERE id=?"; 
+        
+        try {
+            stmt = con.prepareStatement(sql);
+            stmt.setString(1, tema);
+            stmt.setBlob(2, foto);          
+            stmt.setInt(3, id);
+            stmt.executeUpdate(); 
+            return 1;
+        } catch (Exception e) {
+            return 0;
+        }
+    }
 }

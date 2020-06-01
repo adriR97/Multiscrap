@@ -1,6 +1,6 @@
 <%-- 
-    Document   : addAlbum
-    Created on : 27/05/2020, 17:37:48
+    Document   : albumAlterar
+    Created on : 01/06/2020, 15:52:32
     Author     : dryro
 --%>
 
@@ -32,19 +32,26 @@
             <a href="#" style="margin-top: 450px"><i class='fas fa-sign-out-alt'></i> Sair</a>
         </div>
         
-        <div class="conteudoAdmin"> 
+        <div class="conteudoAdmin">
+            <%
+                String id = request.getParameter("id").trim();
+                String tema = request.getParameter("album").trim();
+            %>
+            
+            
             <form action="salvaAlbumFoto" method="post" name="formAlbum"
                   style="margin-top: 200px; margin-left: 430px; " 
                   onsubmit="return validar()" enctype="multipart/form-data">
-                <h3 style="font-size: 20px">Cadastrar novo álbum</h3>
+                <h3 style="font-size: 20px">Alterar álbum</h3>
                 <b style="font-size: 18px;">Tema: </b>
-                <input type="text" name="tema" placeholder="Tema" 
+                <input type="text" name="tema" placeholder="Tema" value="<%= tema %>"
                        style="text-align: center; margin-left: 18px; width: 200px; font-size: 15px;"> <br><br>
                 <b style="font-size: 18px">Selecione a foto de capa: </b>                
                 <input type="file" name="foto" accept="image/png, image/jpeg" 
                        title="Clique para adicionar uma imagem" style="font-size: 15px"><br><br>
-                <input type="hidden" name="opcao" value="1"><br>
-                <input type="submit" value="Cadastrar Álbum" class="btnAddAltAlbum" style="font-size: 16px;">
+                <input type="hidden" name="id" value="<%= id %>"><br>
+                <input type="hidden" name="opcao" value="2">
+                <input type="submit" value="Alterar Álbum" class="btnAddAltAlbum" style="font-size: 16px;">
             </form> 
         </div>
     </body>

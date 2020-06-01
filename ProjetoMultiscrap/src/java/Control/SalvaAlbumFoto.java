@@ -35,7 +35,8 @@ public class SalvaAlbumFoto extends HttpServlet {
         PrintWriter out = response.getWriter();
         response.setContentType("text/html");
         
-        int resultado;
+        int resultado, id;
+        int opcao = Integer.parseInt(request.getParameter("opcao"));
         String tema = request.getParameter("tema").trim();
         Part foto = request.getPart("foto");        
         InputStream inputStream = null;
@@ -45,13 +46,24 @@ public class SalvaAlbumFoto extends HttpServlet {
             inputStream = foto.getInputStream();
         }
         
-        resultado = album.novoAlbum(tema, inputStream);
+        if(opcao == 1){
+            resultado = album.novoAlbum(tema, inputStream);
         
-        if(resultado > 0){
-            mensagem = "O álbum foi adicionado com sucesso!";
-        } else {
-            mensagem = "Não foi possível adicionar o álbum!";
-        }   
+            if(resultado > 0){
+                mensagem = "O álbum foi adicionado com sucesso!";
+            } else {
+                mensagem = "Não foi possível adicionar o álbum!";
+            }              
+        } else if(opcao == 2) {
+            id = Integer.parseInt(request.getParameter("id").trim());
+            resultado = album.alterarAlbum(tema, inputStream, id);
+            
+            if(resultado > 0){
+                mensagem = "O álbum foi alterado com sucesso!";
+            } else {
+                mensagem = "Não foi possível alterar o álbum!";
+            }
+        }           
         
         request.setAttribute("Mensagem", mensagem);
         getServletContext().getRequestDispatcher("/albumResultado.jsp").forward(request, response);

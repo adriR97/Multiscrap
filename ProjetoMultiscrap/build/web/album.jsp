@@ -67,12 +67,12 @@
                             <img src="albumImagem.jsp?id= <%= albumUni.getId() %> " width="100%"/> <br>
                             <div>
                                 <a class="overlayTema"><div class="text"><%= albumUni.getTema() %></div></a>
-                                <a class="overlayDetalhes" href="#"><div class="text">
+                                <a class="overlayDetalhes"><div class="text">
                                         <i class='fas fa-photo-video'></i> Ver Detalhes</div></a>
                             </div>
                         </div>
-                        <a class="botaoALbum" href="#">Alterar</a>
-                        <a class="botaoALbum" href="#">Excluir</a>
+                        <a class="botaoALbum" href="albumAlterar.jsp?id=<%= albumUni.getId() %>&album=<%= albumUni.getTema() %>">Alterar</a>
+                        <a class="botaoALbum" href="albumExcluir.jsp?id=<%= albumUni.getId() %>">Excluir</a>
                     </div>
             
             <%

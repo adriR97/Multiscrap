@@ -24,7 +24,6 @@
         <div class="conteudoAdmin" style="text-align: center; margin-top: 250px; font-size: 22px;">
             <h4><%=request.getAttribute("Mensagem")%></h4>
             <% conexao.fechar(); %>
-            <a href="albumAdd.jsp" class="btnAddAlbum">Adicionar Álbum</a>  
         </div>
     </body>
 </html>

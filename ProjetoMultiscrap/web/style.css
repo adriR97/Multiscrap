@@ -2,22 +2,26 @@ root {
     display: block;
 }
 
+/*-------------------Tirando as margens e definindo a fonte-------------------*/
 body{
     font-family: "Roboto Condensed",sans-serif;
     margin: 0 0 0 0;
 }
 
+/*----------------------Layout do menu da página inicial----------------------*/
 .menu{
     background-color: #000;
     width: 100%;
     height: 59px;
 }
 
+/*Botão home*/
 .menu .botao-home{
     background: #FA5882;
     color: #fff;
 }
 
+/*Itens do menu*/
 .menu ul {
     list-style-type: none;
     margin: 0;
@@ -46,8 +50,7 @@ body{
     color: #fff;
 }
 
-/*CSS dos botões de redes sociais*/
-
+/*--------------------------------Redes sociais-------------------------------*/
 .divEsquerdaMenu {
     float: right;
     margin-top: -59px;
@@ -66,8 +69,7 @@ body{
     color: #fff;
 }
 
-/*CSS dos dropwons*/
-
+/*----------------------------Dropdown menu inicial---------------------------*/
 .dropbtn {
     background-color: #000;
     color: white;
@@ -119,8 +121,7 @@ body{
     color: #fff;
 }
 
-/*Filtro tema página inicial*/
-
+/*----------------------Filtro qual o tema da sua festa-----------------------*/
 .divPesquisaTema{
     background-image: url('imagens/teste.jpeg');
     height: 570px;
@@ -149,8 +150,7 @@ body{
     color: #fff;
 }
 
-/*###################################### Página de login ######################################*/
-
+/*------------------------------Página de login-------------------------------*/
 #divLogin{
     width: 100%;
     height: 580px;
@@ -185,8 +185,8 @@ body{
     color: #fff;
 }
 
-/*###################################### Página Administrativa ######################################*/
-
+/*----------------------------Página Administrativa---------------------------*/
+/*Menu lateral*/
 .menuAdmin {
     height: 100%;
     width: 160px;
@@ -212,11 +212,13 @@ body{
     color: white;
 }
 
+/*Definindo tamanho da página de conteúdo*/
 .conteudoAdmin{
     margin-left: 160px;
     padding: 0px 10px;
 }
 
+/*Botão de erro de login*/
 .btnErro {
     color: #6e6a6a;
     font-size: 20px; 
@@ -233,8 +235,7 @@ body{
     color: #fff;
 }
 
-/*###################################### Página álbuns ######################################*/
-
+/*------------------------------Página de álbuns------------------------------*/
 .btnAddAlbum{
     color: #6e6a6a;
     font-size: 18px; 
@@ -266,6 +267,7 @@ body{
     margin-right: 2.6%;
 }
 
+/*tabela com todos os álbuns*/
 .tabelaItens{
     margin-top: 20px !important;
     width: 98%;
@@ -305,8 +307,7 @@ body{
     color: #fff;    
 }
 
-/*--------------------- Efeito ao passar com o mouse por cima do álbum ---------------------*/
-
+/*Efeito ao passar com o mouse por cima do álbum*/
 .overlayTema {
   position: absolute;
   bottom: 100%;
@@ -356,3 +357,20 @@ body{
   text-align: center;
 }
 
+/*Botão adicionar/alterar album*/
+.btnAddAltAlbum{
+    color: #6e6a6a;
+    font-size: 18px; 
+    background: black;
+    text-decoration: none;
+    padding: 10px 10px;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    margin-top: 10px;
+}
+
+.btnAddAltAlbum:hover {
+    background-color: #FA5882;
+    color: #fff;  
+}
