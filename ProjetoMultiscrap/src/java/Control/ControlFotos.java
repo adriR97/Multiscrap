@@ -25,7 +25,7 @@ public class ControlFotos {
     public ArrayList listarAlbuns(){
         ArrayList colecao = new ArrayList();
         BeanAlbum album;
-        String sql = "SELECT id, tema FROM album";
+        String sql = "SELECT id, tema FROM album order by tema";
         
         try {
             stmt = con.prepareStatement(sql);
@@ -70,4 +70,17 @@ public class ControlFotos {
             return 0;
         }
     }
+    
+    public boolean excluirAlbum(int id){
+        String sql = "DELETE FROM album WHERE id=?";
+        
+        try {
+            stmt = con.prepareStatement(sql);
+            stmt.setInt(1, id);
+            stmt.executeUpdate();
+            return true;
+        } catch (SQLException e) {
+            return false;
+        }
+    }    
 }

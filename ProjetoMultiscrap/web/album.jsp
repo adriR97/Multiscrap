@@ -64,7 +64,7 @@
             
                     <div id="divColuna" class="colunaTabela">
                         <div class="imagemTabela">
-                            <img src="albumImagem.jsp?id= <%= albumUni.getId() %> " width="100%"/> <br>
+                            <img src="albumImagem.jsp?id=<%= albumUni.getId() %>" width="100%"/> <br>
                             <div>
                                 <a class="overlayTema"><div class="text"><%= albumUni.getTema() %></div></a>
                                 <a class="overlayDetalhes"><div class="text">
