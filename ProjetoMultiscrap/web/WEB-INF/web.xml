@@ -4,9 +4,25 @@
         <servlet-name>SalvaAlbumFoto</servlet-name>
         <servlet-class>Control.SalvaAlbumFoto</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>salvaFotoNoAlbum</servlet-name>
+        <servlet-class>Control.salvaFotoNoAlbum</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FechaSessao</servlet-name>
+        <servlet-class>Control.FechaSessao</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>SalvaAlbumFoto</servlet-name>
         <url-pattern>/salvaAlbumFoto</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>salvaFotoNoAlbum</servlet-name>
+        <url-pattern>/salvaFotoNoAlbum</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FechaSessao</servlet-name>
+        <url-pattern>/fechaSessao</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

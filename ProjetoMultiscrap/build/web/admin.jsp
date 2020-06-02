@@ -28,9 +28,9 @@
          %>
          
                 <div class="menuAdmin">
-                    <a href="album.jsp"><i class='fas fa-book'></i> Álbuns</a>
-                    <a href="#"><i class='fas fa-camera'></i> Fotos</a>
-                    <a href="#" style="margin-top: 450px"><i class='fas fa-sign-out-alt'></i> Sair</a>
+                    <a href="adminAlbum.jsp"><i class='fas fa-book'></i> Álbuns</a>
+                    <a href="adminFotos.jsp"><i class='fas fa-camera'></i> Fotos</a>
+                    <a href="fechaSessao" style="margin-top: 450px"><i class='fas fa-sign-out-alt'></i> Sair</a>
                 </div>
         
                 <div class="conteudoAdmin" style="text-align: center">
