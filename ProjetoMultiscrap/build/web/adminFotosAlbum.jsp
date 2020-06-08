@@ -46,8 +46,10 @@
             
             <div class="colunaFotos">
                 <div class="fotoAlbum">
-                    <img width="100%" src="adminFotoImagem.jsp?id=<%= foto.getIdFoto() %>&album=<%= foto.getIdAlbum() %>"/> <br>
+                    <img width="100%"
+                         src="adminFotoImagem.jsp?id=<%= foto.getIdFoto() %>&album=<%= foto.getIdAlbum() %>"/> <br>
                     <div>
+                        <a class="overlayDescricao"><div class="text"><%= foto.getDescricao() %></div></a>
                         <a class="overlayExcluirFoto" href="adminFotoExcluir.jsp?id=<%= foto.getIdFoto() %>&album=<%= foto.getIdAlbum() %>">
                             <div class="textFoto"><i class='fas fa-eraser'></i> Excluir Foto</div></a>
                     </div>

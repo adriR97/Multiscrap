@@ -85,13 +85,14 @@ public class ControlFotos {
         }
     }    
     
-    public int salvaFoto(int idAlbum, InputStream foto){
-        String sql = "INSERT INTO foto(id_album, foto) VALUES (?,?)";
+    public int salvaFoto(int idAlbum, InputStream foto, String descricao){
+        String sql = "INSERT INTO foto(id_album, foto, descricao) VALUES (?,?,?)";
         
         try {
             stmt = con.prepareStatement(sql);
             stmt.setInt(1, idAlbum);
             stmt.setBlob(2, foto);
+            stmt.setString(3, descricao);
             stmt.executeUpdate();
             return 1;
         } catch (SQLException e) {
@@ -102,7 +103,7 @@ public class ControlFotos {
     public ArrayList listarFotosAlbum(int idAlbum){
         ArrayList colecao = new ArrayList();
         BeanFoto foto;
-        String sql = "SELECT id, id_album FROM foto where id_album=?";
+        String sql = "SELECT id, id_album, descricao FROM foto where id_album=?";
         
         try {
             stmt = con.prepareStatement(sql);
@@ -110,7 +111,7 @@ public class ControlFotos {
             rs = stmt.executeQuery();   
             
             while(rs.next()){
-                foto = new BeanFoto(rs.getInt("id"), rs.getInt("id_album"));
+                foto = new BeanFoto(rs.getInt("id"), rs.getInt("id_album"), rs.getString("descricao"));
                 colecao.add(foto);
             }
             

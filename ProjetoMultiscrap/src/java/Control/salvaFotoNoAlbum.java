@@ -37,6 +37,7 @@ public class salvaFotoNoAlbum extends HttpServlet {
         
         int resultado, id;
         String tema = request.getParameter("tema").trim();
+        String descricao = request.getParameter("descricao").trim();
         int idAlbum = Integer.parseInt(request.getParameter("idAlbum"));
         Part foto = request.getPart("foto");        
         InputStream inputStream = null;
@@ -46,7 +47,7 @@ public class salvaFotoNoAlbum extends HttpServlet {
             inputStream = foto.getInputStream();
         }
         
-        resultado = album.salvaFoto(idAlbum, inputStream);
+        resultado = album.salvaFoto(idAlbum, inputStream, descricao);
         
         if(resultado > 0){
             mensagem = "Foto adicionada com sucesso!";

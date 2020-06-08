@@ -31,6 +31,9 @@
                   style="margin-top: 200px; margin-left: 430px; " 
                   enctype="multipart/form-data">
                 <h3 style="font-size: 20px">Adicionar foto em <%= album %></h3>
+                <b style="font-size: 18px;">Tema: </b>
+                <input type="text" name="descricao" placeholder="Descrição" 
+                       style="text-align: center; margin-left: 18px; width: 200px; font-size: 15px;"> <br><br>
                 <input type="file" name="foto" accept="image/png, image/jpeg" 
                        title="Clique para adicionar uma imagem" style="font-size: 15px">
                 <br><br>

@@ -19,18 +19,18 @@
     <body>        
         <div class="menu">
             <ul>
-                <li><a class="botao-home" href="#">HOME</a></li>
+                <li><a class="botao-home" href="index.jsp">HOME</a></li>
                 <li class="dropdown">
                     <a class="dropbtn" data-toggle="dropdown">CATEGORIA DE PRODUTOS <i class='fas fa-angle-down'></i></a>
                     <div class="dropdown-content" >
-                        <a href="#">Papelaria</a>
-  			<a href="#">Linha Petit</a>
-  			<a href="#">Linha Pop</a>
-  			<a href="#">Linha Scrap</a>
-  			<a href="#">Linha Creative</a>
+                        <a href="#">PAPELARIA</a>
+  			<a href="#">LINHA PETIT</a>
+  			<a href="#">LINHA POP</a>
+  			<a href="#">LINHA SCRAP</a>
+  			<a href="#">LINHA CREATIVE</a>
                     </div>
                 </li> 
-                <li><a href="#">TEMAS</a></li>
+                <li><a href="temas.jsp">TEMAS</a></li>
                 <li><a href="#">OPÇÕES DE KITS</a></li>
                 <li><a href="#">SOBRE NÓS</a></li>
             </ul>    
