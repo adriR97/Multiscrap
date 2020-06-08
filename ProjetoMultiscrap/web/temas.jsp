@@ -88,8 +88,9 @@
                             <img src="adminAlbumImagem.jsp?id=<%= albumUni.getId() %>" width="100%"/> <br>
                             <div>
                                 <a class="overlayTema"><div class="text"><%= albumUni.getTema() %></div></a>
-                                <a class="overlayDetalhes"><div class="text">
-                                        <i class='fas fa-photo-video'></i> Ver Detalhes</div></a>
+                                <a class="overlayDetalhes" 
+                                   href="temaFotos.jsp?id=<%= albumUni.getId() %>&tema=<%= albumUni.getTema() %>"><div class="text">
+                                   <i class='fas fa-photo-video'></i> Ver Fotos</div></a>
                             </div>
                         </div>
                     </div>

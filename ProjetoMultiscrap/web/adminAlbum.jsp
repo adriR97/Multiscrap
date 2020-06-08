@@ -68,7 +68,7 @@
                             <div>
                                 <a class="overlayTema"><div class="text"><%= albumUni.getTema() %></div></a>
                                 <a class="overlayDetalhes"><div class="text">
-                                        <i class='fas fa-photo-video'></i> Ver Detalhes</div></a>
+                                        <i class='fas fa-photo-video'></i> Ver Fotos</div></a>
                             </div>
                         </div>
                         <a class="botaoALbum" href="adminAlbumAlterar.jsp?id=<%= albumUni.getId() %>&album=<%= albumUni.getTema() %>">Alterar</a>
