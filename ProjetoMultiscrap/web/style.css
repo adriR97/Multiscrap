@@ -12,7 +12,7 @@ body{
 .menu{
     background-color: #000;
     width: 100%;
-    height: 59px;
+    height: 54px;
 }
 
 /*Botão home*/
@@ -41,8 +41,9 @@ body{
     display: block;
     color: #6e6a6a;
     text-align: center;
-    padding: 18px 20px;
+    padding: 16px 20px;
     text-decoration: none;
+    height: 54px;
 }
 
 .menu li a:hover:not(.active) {

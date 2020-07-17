@@ -24,20 +24,26 @@
         <div class="menuAbas">
             <ul>
                 <li><a class="botao-home" href="index.jsp">HOME</a></li>
+                <li><a href="#">A SCRAP BOX</a></li>
+                <li><a href="temas.jsp">COLEÇÕES</a></li>
                 <li class="dropdown">
-                    <a class="dropbtn" data-toggle="dropdown">CATEGORIA DE PRODUTOS <i class='fas fa-angle-down'></i></a>
+                    <a class="dropbtn" data-toggle="dropdown">SCRAP KITS <i class='fas fa-angle-down'></i></a>
                     <div class="dropdown-content" >
-                        <a href="#">PAPELARIA</a>
-  			<a href="#">LINHA PETIT</a>
-  			<a href="#">LINHA POP</a>
-  			<a href="#">LINHA SCRAP</a>
-  			<a href="#">LINHA CREATIVE</a>
+                        <a href="#">OPÇÃO 1</a>
+  			<a href="#">OPÇÃO 2</a>
+  			<a href="#">OPÇÃO 3</a>
+                    </div>
+                </li>                 
+                <li><a href="#">BOX SURPRESA</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn" data-toggle="dropdown">MOLDES <i class='fas fa-angle-down'></i></a>
+                    <div class="dropdown-content" >
+                        <a href="#">MOLDES GRATUITOS</a>
+  			<a href="#">KITS PARA MONTAR</a>
                     </div>
                 </li> 
-                <li><a href="temas.jsp">TEMAS</a></li>
-                <li><a href="#">OPÇÕES DE KITS</a></li>
-                <li><a href="#">SOBRE NÓS</a></li>
-            </ul>    
+                <li><a href="#">PRESENTES</a></li>
+            </ul>      
             <div class="divEsquerdaMenuAbas">
                 <a href="https://www.instagram.com/multiscrap/?hl=pt-br" target="_blank" class="btnRedesSociaisAbas"
                    style="margin-right: -5px;">
